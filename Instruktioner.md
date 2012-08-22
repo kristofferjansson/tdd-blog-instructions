@@ -9,7 +9,23 @@ Strunta i all användarhantering etc, for now
 
 Givet att det finns ett blogginlägg i databasen ska en användare kunna gå in på indexsidan och se ett blogginläget. Inlägget ska bestå av en titel och en text.
 
-**2. Skapa ett nytt inlägg bloggen**
+**2. Skapa ett nytt blogginlägg**
 
 En användare ska kunna skapa ett nytt inlägg. Titeln och texten ska vara obligatorisk och texten får inte vara kortare än 50 tecken. När inlägget är skapat ska det gå att se på indexsidan. Det ska också framgå när inlägget publicerades (skapades).
 
+**3. Redigera ett blogginlägg**
+En användare ska kunna redigera ett befintligt inlägg. Titeln och texten ska fortfarande vara obligatorisk och texten får inte heller nu vara kortare än 50 tecken. När användaren har uppdaterat inlägget ska det gå att se förändringarna på indexsidan.
+
+**4. Ta bort ett blogginlägg**
+En användare ska i redigera-vyn kunna klicka på en knapp "ta bort". Blogginlägget ska då inte visas på indexsidan.
+
+### Bonus: Kommentarer
+
+**1. Lägg till en kommentar till ett blogginlägg**
+En användare ska kunna klicka sig in på ett blogginlägg. I den vyn ska det gå att lämna en kommentar i ett textfält + genom att trycka på spara. När kommentaren är lämnad ska den synas på blogginläggssidan (show). På indexsidan ska antalet kommentarer synas. Kommentaren måste en längd.
+
+**2.Kräv email av användaren**
+För att en användare ska få lämna en kommentar krävs att den anger en giltig emailadress.  
+
+**3. En användare får endast lämna en kommentar per inlägg**
+Se till att email är unik för varje kommentar (per blogginlägg) 
