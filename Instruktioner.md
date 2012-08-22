@@ -5,7 +5,7 @@ TDD-Blog: A TDD Workshop
 
 Strunta i all användarhantering etc, for now
 
-**1. Visa bloggen**
+##### 1. Visa bloggen
 Givet att det finns ett blogginlägg i databasen ska en användare kunna gå in på indexsidan och se ett blogginläget. Inlägget ska bestå av en titel och en text.
 
 **2. Skapa ett nytt blogginlägg**
