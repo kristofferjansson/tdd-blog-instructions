@@ -32,3 +32,4 @@ Se till att email är unik för varje kommentar (per blogginlägg)
 
 * https://github.com/jnicklas/capybara
 * http://rubydoc.info/gems/rspec-expectations/frames
+* https://github.com/thoughtbot/factory_girl/blob/master/GETTING_STARTED.md
