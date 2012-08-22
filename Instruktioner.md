@@ -19,11 +19,11 @@ En användare ska i redigera-vyn kunna klicka på en knapp "ta bort". Blogginlä
 
 ### Bonus: Kommentarer
 
-##### 1. Lägg till en kommentar till ett blogginlägg**
+##### 1. Lägg till en kommentar till ett blogginlägg
 En användare ska kunna klicka sig in på ett blogginlägg. I den vyn ska det gå att lämna en kommentar i ett textfält + genom att trycka på spara. När kommentaren är lämnad ska den synas på blogginläggssidan (show). På indexsidan ska antalet kommentarer synas. Kommentaren måste en längd.
 
-##### 2.Kräv email av användaren**
+##### 2.Kräv email av användaren
 För att en användare ska få lämna en kommentar krävs att den anger en giltig emailadress. Annars ska ett felmeddelande visas.
 
-##### 3. En användare får endast lämna en kommentar per inlägg**
+##### 3. En användare får endast lämna en kommentar per inlägg
 Se till att email är unik för varje kommentar (per blogginlägg) 
