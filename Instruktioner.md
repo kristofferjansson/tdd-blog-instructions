@@ -27,3 +27,8 @@ För att en användare ska få lämna en kommentar krävs att den anger en gilti
 
 ##### 3. En användare får endast lämna en kommentar per inlägg
 Se till att email är unik för varje kommentar (per blogginlägg) 
+
+### Links
+
+* https://github.com/jnicklas/capybara
+* http://rubydoc.info/gems/rspec-expectations/frames
