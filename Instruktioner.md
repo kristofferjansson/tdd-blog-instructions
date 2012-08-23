@@ -33,6 +33,9 @@ Se till att email är unik för varje kommentar (per blogginlägg)
 ##### 1. Varje blogginlägg har en kategori
 När en användare skriver ett blogginlägg kan den välja en kategori från en dropdown. Kategorierna måste vara en av de befintliga kategorierna (t.ex. `%w{ fun education music film news misc }`) Kategorien ska vara obligatorisk.
 
+##### 2. En användare kan redigera kategorier
+En användare kan lägga till och ta bort kategorier i en speciellt vy. Det går även att byta namn på befintliga kategorier.
+
 ### Links
 
 * https://github.com/jnicklas/capybara
