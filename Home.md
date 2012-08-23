@@ -40,6 +40,7 @@ En användare kan lägga till och ta bort kategorier i en speciellt vy. Det går
 
 ### Links
 
+* https://github.com/theneubeck/tdd_blog/wiki/Syntax
 * https://github.com/jnicklas/capybara
 * http://rubydoc.info/gems/rspec-expectations/frames
 * https://github.com/thoughtbot/factory_girl/blob/master/GETTING_STARTED.md
