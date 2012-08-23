@@ -6,6 +6,8 @@ click_on "Create" # click a link or a button with the text "Create"
 
 current_path.should == new_post_path # assert that the current path is "/posts/new"
 page.should have_content("Nice post") # assert that the text is visible
+
+save_and_open_page # cheating
 ```
 
 ### Rspec
