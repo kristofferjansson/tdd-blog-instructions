@@ -22,7 +22,7 @@ delete :destroy
 ```
 
 ### Factory Girl
-```
+```ruby
 post = FactoryGirl.create(:post, :title => "Hi", :body => "body) # create and save a post object
 post = FactoryGirl.build(:post, :title => "Hi", :body => "body) # build but DONT save a post object
 ```
