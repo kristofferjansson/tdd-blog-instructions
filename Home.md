@@ -1,4 +1,3 @@
-
 ## Instruktioner
 
 ### Uppgift: Att skapa en enkel bloggmotor
@@ -9,7 +8,13 @@ Strunta i all användarhantering etc, for now
 Givet att det finns ett blogginlägg i databasen ska en användare kunna gå in på indexsidan och se ett blogginläget. Inlägget ska bestå av en titel och en text.
 
 ##### 2. Skapa ett nytt blogginlägg
-En användare ska kunna skapa ett nytt inlägg. Titeln och texten ska vara obligatorisk och texten får inte vara kortare än 50 tecken. När inlägget är skapat ska det gå att se på indexsidan. Det ska också framgå när inlägget publicerades (skapades).
+En användare ska kunna skapa ett nytt inlägg med titel och text. När inlägget är skapat ska det gå att se på indexsidan. 
+
+##### 2b. Blogginläggskrav
+Titeln och texten ska vara obligatorisk och texten får inte vara kortare än 50 tecken. 
+
+##### 2c. Timestamps
+På indexsidan ska det framgå när inlägget publicerades (skapades).
 
 ##### 3. Redigera ett blogginlägg
 En användare ska kunna redigera ett befintligt inlägg. Titeln och texten ska fortfarande vara obligatorisk och texten får inte heller nu vara kortare än 50 tecken. När användaren har uppdaterat inlägget ska det gå att se förändringarna på indexsidan.
