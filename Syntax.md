@@ -28,3 +28,17 @@ delete :destroy
 post = FactoryGirl.create(:post, :title => "Hi", :body => "body") # create and save a post object
 post = FactoryGirl.build(:post, :title => "Hi", :body => "body") # build but DONT save a post object
 ```
+
+### Active Record
+```ruby
+#validations
+validates :terms, :acceptance => true
+validates :password, :confirmation => true
+validates :username, :exclusion => { :in => %w(admin superuser) }
+validates :email, :format => { :with => /\A([^@\s]+)@((?:[-a-z0-9]+\.)+[a-z]{2,})\Z/i, :on => :create }
+validates :age, :inclusion => { :in => 0..9 }
+validates :first_name, :length => { :maximum => 30 }
+validates :age, :numericality => true
+validates :username, :presence => true
+validates :username, :uniqueness => true
+```
