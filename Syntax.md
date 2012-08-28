@@ -6,6 +6,7 @@ click_on "Create" # click a link or a button with the text "Create"
 
 current_path.should == new_post_path # assert that the current path is "/posts/new"
 page.should have_content("Nice post") # assert that the text is visible
+find_field("Title").value.should ==  "Hello World" # The title field should be filled with "Hello World"
 
 save_and_open_page # cheating
 ```
@@ -15,11 +16,11 @@ save_and_open_page # cheating
 # controllers
 assigns[:posts].should == [blog_post] # assert that @posts is an array with the element blog_post
 
-# CRUD
+# CRUD (in controllers)
 get :index
-post :create, {:some => "param" } # POST on create with the params { :some => "param" }
-put :update
-delete :destroy
+post :create, :post => { :some => "param" }} # POST on create with the params[:post] => { :some => "param" }
+put :update, {:id => 1, :post => { :some => "param" }}
+delete :destroy {:id => 1 }
 
 ```
 
@@ -27,6 +28,7 @@ delete :destroy
 ```ruby
 post = FactoryGirl.create(:post, :title => "Hi", :body => "body") # create and save a post object
 post = FactoryGirl.build(:post, :title => "Hi", :body => "body") # build but DONT save a post object
+post_attributes = FactoryGirl.attributes_for(:post) # get the attributes for post
 ```
 
 ### Active Record
