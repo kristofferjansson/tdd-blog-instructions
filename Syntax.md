@@ -49,5 +49,5 @@ validates :username, :uniqueness => true
 ```ruby
 it { should validate_presence_of(:last_name) }
 it { should_not allow_value("blah").for(:email)  }
-it { should allow_value("test@example.org").for(:body) }
+it { should allow_value("test@example.org").for(:email) }
 ```
