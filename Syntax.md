@@ -23,8 +23,9 @@ end
 ```
 
 ### Rspec
+
+####Controllers
 ```ruby
-# controllers
 describe MyController do
 
   # CRUD (in controllers)
@@ -39,10 +40,9 @@ describe MyController do
     assigns[:posts].should == [blog_post] # assert that @posts is an array with the element blog_post
   end
 end
-
-#views
-
-
+```
+### Views
+```ruby
 # watch the naming
 describe "posts/index" do
 
