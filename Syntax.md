@@ -1,3 +1,11 @@
+### Command Line
+```bash
+rake db:migrate
+RAILS_ENV=test rake db:migrate
+
+rspec spec
+```
+
 ### Capybara
 ```ruby
 
