@@ -39,6 +39,26 @@ describe MyController do
     assigns[:posts].should == [blog_post] # assert that @posts is an array with the element blog_post
   end
 end
+
+#views
+
+
+# watch the naming
+describe "posts/index" do
+
+  it "should view a title and a text" do
+    # the variables are passed on to the view
+    @posts = [FactoryGirl.create(:post, :title => "title" , :body => "body" * 50)]
+    
+    # renders the view - the name of the test...
+    render
+
+    # assert the content
+    rendered.should have_content("title")
+    rendered.should have_content("body" * 50)
+  end
+
+end
 ```
 
 ### Factory Girl
