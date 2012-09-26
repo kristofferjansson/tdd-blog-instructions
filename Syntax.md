@@ -14,21 +14,29 @@ save_and_open_page # cheating
 ### Rspec
 ```ruby
 # controllers
-assigns[:posts].should == [blog_post] # assert that @posts is an array with the element blog_post
+describe MyController do
 
-# CRUD (in controllers)
-get :index
-post :create, :post => { :some => "param" }} # POST on create with the params[:post] => { :some => "param" }
-put :update, {:id => 1, :post => { :some => "param" }}
-delete :destroy {:id => 1 }
+  # CRUD (in controllers)
+  it "should do requests" do
+    get :index
+    post :create, :post => { :some => "param" }} # POST on create with the params[:post] => { :some => "param" }
+    put :update, {:id => 1, :post => { :some => "param" }}
+    delete :destroy {:id => 1 }
+  end
 
+  it "should check asigns" do
+    assigns[:posts].should == [blog_post] # assert that @posts is an array with the element blog_post
+  end
+end
 ```
 
 ### Factory Girl
 ```ruby
-post = FactoryGirl.create(:post, :title => "Hi", :body => "body") # create and save a post object
-post = FactoryGirl.build(:post, :title => "Hi", :body => "body") # build but DONT save a post object
-post_attributes = FactoryGirl.attributes_for(:post) # get the attributes for post
+it "should test" do
+  post = FactoryGirl.create(:post, :title => "Hi", :body => "body") # create and save a post object
+  post = FactoryGirl.build(:post, :title => "Hi", :body => "body") # build but DONT save a post object
+  post_attributes = FactoryGirl.attributes_for(:post) # get the attributes for post
+end
 ```
 
 ### Active Record
