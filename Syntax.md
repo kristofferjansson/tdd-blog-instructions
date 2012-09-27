@@ -59,6 +59,20 @@ describe "posts/index" do
   end
 
 end
+
+## Assertions
+have_button(locator)
+have_checked_field(locator)
+have_content(text)
+have_css(css, options = {})
+have_field(locator, options = {})
+have_link(locator, options = {})
+have_select(locator, options = {})
+have_selector(*args)
+have_table(locator, options = {})
+have_text(text)
+have_unchecked_field(locator)
+have_xpath(xpath, options = {})
 ```
 
 ### Factory Girl
