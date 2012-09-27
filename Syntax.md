@@ -3,6 +3,9 @@
 rake db:migrate
 RAILS_ENV=test rake db:migrate
 
+rails g rspec:views posts index
+rails g rspec:views posts edit
+
 rspec spec
 ```
 
