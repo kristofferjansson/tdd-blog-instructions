@@ -108,3 +108,12 @@ describe "testing", MyModel
   it { should allow_value("test@example.org").for(:email) }
 end
 ```
+
+### Simple Form
+```erb
+<%= simple_form_for @user do |f| %>
+  <%= f.input :username %>
+  <%= f.input :password %>
+  <%= f.button :submit %>
+<% end %>
+```
