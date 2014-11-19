@@ -14,7 +14,7 @@ rspec spec
 ### Capybara
 ```ruby
 
-it "should do my acceptance test"
+it "should do my acceptance test" do
   visit "/" # go to "/"
   fill_in "Title", :with => "Hello again" # fill in a form field with the value
   click_on "Create" # click a link or a button with the text "Create"
