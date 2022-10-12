@@ -12,7 +12,7 @@ Givet att det finns ett blogginlägg i databasen ska en användare kunna gå in 
 
 
 ##### 2b. Blogginläggskrav
-Titeln och texten ska vara obligatorisk och texten får inte vara kortare än 50 tecken. Om de är det ska man inte kunna spara och ett felmeddelande ska visas.
+Titeln och texten ska vara obligatorisk och texten får inte vara kortare än 10 tecken. Om de är det ska man inte kunna spara och ett felmeddelande ska visas.
 
 ##### 3. Redigera ett blogginlägg
 En användare ska kunna redigera ett befintligt inlägg. Titeln och texten ska fortfarande vara obligatorisk och texten får inte heller nu vara kortare än 50 tecken. När användaren har uppdaterat inlägget ska det gå att se förändringarna på indexsidan.
