@@ -5,7 +5,10 @@
 Strunta i all användarhantering etc, for now
 
 ##### 1. Skapa ett nytt blogginlägg
-En användare ska kunna skapa ett nytt inlägg med titel och text. När inlägget är skapat ska det gå att se på indexsidan. 
+En användare ska kunna skapa ett nytt inlägg med titel och text. 
+
+##### 1b. När inlägget är skapat ska det gå att se. 
+En användare ska kunna se ett inlägg. Om inget finns ska det returneras 404
 
 ##### 2. Visa bloggen
 Givet att det finns ett blogginlägg i databasen ska en användare kunna gå in på indexsidan och se blogginlägget. Inlägget ska bestå av en titel och en text.
@@ -38,10 +41,3 @@ När en användare skriver ett blogginlägg kan den välja en kategori från en 
 
 ##### 2. En användare kan redigera kategorier
 En användare kan lägga till och ta bort kategorier i en speciellt vy. Det går även att byta namn på befintliga kategorier.
-
-### Links
-
-* https://github.com/theneubeck/tdd_blog/wiki/Syntax
-* https://github.com/jnicklas/capybara
-* http://rubydoc.info/gems/rspec-expectations/frames
-* https://github.com/thoughtbot/factory_girl/blob/master/GETTING_STARTED.md
