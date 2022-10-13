@@ -56,20 +56,20 @@ You should be able to delete an existing post by sending DELETE to an endpoint.
 
 Preferably make the comments be managed by a separate comments service which you mock out in the tests. If this is too hard, stick with database/in memory.
 
-##### 1. Lägg till en kommentar till ett blogginlägg
+### 1. Lägg till en kommentar till ett blogginlägg
 There should be a nested comments endpoint. (or an `include=comments` query-parameter) (`posts/:postid:/comments`). When viewing that the comments should be included. Comments can't be empty.
 
-##### 2.Kräv email av användaren
+### 2.Kräv email av användaren
 För att en användare ska få lämna en kommentar krävs att den anger en giltig emailadress. Annars ska ett felmeddelande visas.
 
-##### 3. En användare får endast lämna en kommentar per inlägg
+### 3. En användare får endast lämna en kommentar per inlägg
 Se till att email är unik för varje kommentar (per blogginlägg)
 
 
 ### Bonus 2: Kategorier
 
-##### 1. Varje blogginlägg har en kategori
+### 1. Varje blogginlägg har en kategori
 När en användare skriver ett blogginlägg kan den välja en kategori från en dropdown. Kategorierna måste vara en av de befintliga kategorierna (t.ex. `%w{ fun education music film news misc }`) Kategorien ska vara obligatorisk.
 
-##### 2. En användare kan redigera kategorier
+### 2. En användare kan redigera kategorier
 En användare kan lägga till och ta bort kategorier i en speciellt vy. Det går även att byta namn på befintliga kategorier.
