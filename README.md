@@ -11,7 +11,7 @@ This is a TDD workshop. Write the tests using [outside in](https://www.codecadem
 * When writing code - Write the bare minimum code that satisfy the test.
 
 **protip(s)**
-* Do not test for things that are not there (they are infinite), test for things that are there
+* Do not test for things that are not there (they are infinite), test for things that are present.
 
 
 ## Task: Create a simple blog engine (API)
