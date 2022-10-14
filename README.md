@@ -18,6 +18,17 @@ This is a TDD workshop. Write the tests using [outside in](https://www.codecadem
 
 Dont care about rights, users or authentication for now.
 
+### REST Scheme
+
+| VERB   	| URL        	| Description   	|
+|--------	|------------	|---------------	|
+| GET    	| /posts/:id 	| Get Single    	|
+| GET    	| /posts     	| Get List of   	|
+| POST   	| /posts     	| Create Single 	|
+| PUT    	| /posts/:id 	| Update Single 	|
+| DELETE 	| /posts/:id 	| Delete Single 	|
+
+
 ### 1. Create & Read
 You should be able to create a blogpost by POSTing to the API. When GETing the blogpost by its id you should see the same post. If no blogpost is present, you should return 404. A blog post consists of a title and a text.
 
