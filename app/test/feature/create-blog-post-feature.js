@@ -16,7 +16,7 @@ Feature("Create blog post", () => {
         });
 
         Then("we should get a 201 OK", () => {
-            expect(response.status).to.equal(201);
+            expect(response.status).to.equal(201, response.text);
         });
 
         And("we get back ID", () => {
