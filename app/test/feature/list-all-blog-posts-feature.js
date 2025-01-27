@@ -33,4 +33,19 @@ Feature("List all blog posts", () => {
       expect(response.body).to.deep.eql([post1, post2])
     });
   });
+
+  Scenario("No blog posts exist", () => {
+    let response;
+    When("requesting blog posts", async () => {
+        response = await supertest(app).get("/posts");
+      });
+  
+    Then("we should get a 200 OK", () => {
+        expect(response.statusCode).to.eql(200, response.text);
+    });
+
+    Then("an empty list of blog posts return", () => {
+        expect(response.body).to.deep.eql([]);
+      });
+    });
 });

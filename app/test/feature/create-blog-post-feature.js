@@ -8,7 +8,7 @@ Feature("Create blog post", () => {
         let responseGet;
         const postData = {
                 title: "Foo",
-                body: "Bar"
+                body: "Barbarbarbar"
         }
         let postId;
         When("making a POST request", async () => {
@@ -35,5 +35,69 @@ Feature("Create blog post", () => {
         And("we get same post back", () => {
             expect(responseGet.body).to.deep.equal(postData);
         })
+    });
+
+    Scenario("trying to create an empty blog post", () => {
+
+        const postDate = {
+            title: "",
+            body: "",
+        }
+        let response;
+        When("making POST request", () => {
+            response = supertest(app).post("/posts").send(postDate);
+        });
+
+        Then("", () => {
+        });
+    });
+
+    Scenario("trying to create no title blog post", () => {
+
+        const postDate = {
+            title: "",
+            body: "Barbarbarbar",
+        }
+        Given("", () => {
+
+        });
+
+        When("", () => {
+        });
+
+        Then("", () => {
+        });
+    });
+
+    Scenario("trying to create no body blog post", () => {
+
+        const postDate = {
+            title: "Foo",
+            body: "",
+        }
+        Given("", () => {
+        });
+
+        When("", () => {
+        });
+
+        Then("", () => {
+        });
+    });
+
+    Scenario("trying to create too short body blog post", () => {
+
+        const postDate = {
+            title: "Foo",
+            body: "BarBar",
+        }
+        Given("", () => {
+        });
+
+        When("", () => {
+        });
+
+        Then("", () => {
+        });
     });
 });
