@@ -48,7 +48,8 @@ Feature("Create blog post", () => {
             response = supertest(app).post("/posts").send(postDate);
         });
 
-        Then("", () => {
+        Then("we should get a 400 Bad Request", () => {
+            expect(response.status).to.equal(400);
         });
     });
 
@@ -58,14 +59,14 @@ Feature("Create blog post", () => {
             title: "",
             body: "Barbarbarbar",
         }
-        Given("", () => {
 
+        let response;
+        When("making POST request", () => {
+            response = supertest(app).post("/posts").send(postDate);
         });
 
-        When("", () => {
-        });
-
-        Then("", () => {
+        Then("we should get a 400 Bad Request", () => {
+            expect(response.status).to.equal(400);
         });
     });
 
@@ -75,13 +76,14 @@ Feature("Create blog post", () => {
             title: "Foo",
             body: "",
         }
-        Given("", () => {
+
+        let response;
+        When("making POST request", () => {
+            response = supertest(app).post("/posts").send(postDate);
         });
 
-        When("", () => {
-        });
-
-        Then("", () => {
+        Then("we should get a 400 Bad Request", () => {
+            expect(response.status).to.equal(400);
         });
     });
 
@@ -91,13 +93,14 @@ Feature("Create blog post", () => {
             title: "Foo",
             body: "BarBar",
         }
-        Given("", () => {
+
+        let response;
+        When("making POST request", () => {
+            response = supertest(app).post("/posts").send(postDate);
         });
 
-        When("", () => {
-        });
-
-        Then("", () => {
+        Then("we should get a 400 Bad Request", () => {
+            expect(response.status).to.equal(400);
         });
     });
 });
